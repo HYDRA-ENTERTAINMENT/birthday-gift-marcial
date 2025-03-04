@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Birthday Gift for Marcial 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #code {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+            display: none;
+        }
+    </style>
+    <script>
+        function revealCode() {
+            const unlockTime = new Date("March 4, 2025 12:00:00").getTime();
+            const now = new Date().getTime();
+            
+            if (now >= unlockTime) {
+                document.getElementById("message").innerText = "Happy Birthday, Marcial! 🎉 Here is your gift:";
+                document.getElementById("code").style.display = "block";
+            } else {
+                document.getElementById("message").innerText = "🎂 The birthday gift will be revealed on March 4, 2025, at 12 PM! 🎂";
+            }
+        }
+        window.onload = revealCode;
+    </script>
+</head>
+<body>
+    <h1>🎁 Birthday Gift for Marcial 🎁</h1>
+    <p id="message"></p>
+    <p id="code">K6AGG-H6S5Y-7RBPU</p>
+</body>
+</html>
